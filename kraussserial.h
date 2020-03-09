@@ -1,5 +1,5 @@
-#ifndef Morse_h
-#define Morse_h
+#ifndef kraussserial_h
+#define kraussserial_h
 
 #include "Arduino.h"
 
@@ -27,7 +27,7 @@ void print_int_with_label(char * label, int val);
 
 void print_float_with_label(char * label, float val);
 
-void print_comma_then_int(float val);
+void print_comma_then_int(int val);
 
 void print_comma_then_float(float val);
 

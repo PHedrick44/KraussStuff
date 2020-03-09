@@ -91,7 +91,7 @@ void get_float_with_message(char * var_name, float * var_dest){
   char msg1[30];
   sprintf(msg1, "enter %s", var_name);
   Serial.println(msg1);
-  *var_dest = get_positive_float();
+  *var_dest = get_float();
   char msg2[30];
   sprintf(msg2, "%s = ", var_name);
   Serial.print(msg2);
@@ -115,7 +115,7 @@ void print_float_with_label(char * label, float val){
   Serial.print(val);
 }
 
-void print_comma_then_int(float val){
+void print_comma_then_int(int val){
   Serial.print(",");
   Serial.print(val);
 }
