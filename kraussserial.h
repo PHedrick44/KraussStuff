@@ -18,8 +18,12 @@ int read_one_byte();
 int get_valid_byte();
 
 void get_int_with_message(char * var_name, int * var_dest);
-  
+
+int get_int_with_message_no_pointer(char * var_name);
+
 void get_float_with_message(char * var_name, float * var_dest);
+
+float get_float_with_message_no_pointer(char * var_name);
 
 void mynewline();
 

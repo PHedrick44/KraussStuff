@@ -86,6 +86,18 @@ void get_int_with_message(char * var_name, int * var_dest){
   Serial.println(msg2);
 }
 
+int get_int_with_message_no_pointer(char * var_name){
+  int output;
+  char msg1[200];
+  sprintf(msg1, "enter %s", var_name);
+  Serial.println(msg1);
+  output = get_positive_int();
+  char msg2[200];
+  sprintf(msg2, "%s = %d", var_name, output);
+  Serial.println(msg2);
+  return(output);
+}
+
 void get_float_with_message(char * var_name, float * var_dest){
   //float out;
   char msg1[30];
@@ -97,6 +109,19 @@ void get_float_with_message(char * var_name, float * var_dest){
   Serial.print(msg2);
   Serial.println(*var_dest,4);
   //return out;
+}
+
+float get_float_with_message_no_pointer(char * var_name){
+  float output;
+  char msg1[30];
+  sprintf(msg1, "enter %s", var_name);
+  Serial.println(msg1);
+  output = get_float();
+  char msg2[30];
+  sprintf(msg2, "%s = ", var_name);
+  Serial.print(msg2);
+  Serial.println(output);
+  return(output);
 }
 
 void mynewline(){
